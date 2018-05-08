@@ -64,10 +64,10 @@ class ViewController: UIViewController {
         let secondString = second! < 10 ? "0\(second!)" : "\(second!)"
         timerLabel.text = String(format: "\(minuteString):\(secondString)")
 
-        if timerLabel.text == "00:03" {
+        if timerLabel.text == "03:00" {
             fire()
         }
-        if timerLabel.text! == "00:05" {
+        if timerLabel.text! == "05:00" {
             fire()
             timer.invalidate()
         }
